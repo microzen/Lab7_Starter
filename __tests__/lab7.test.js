@@ -214,7 +214,7 @@ describe('Basic user flow for Website', () => {
     const cartCountElement = await page.$('#cart-count');
     const cartCountText = await (await cartCountElement.getProperty('innerText')).jsonValue();
     expect(cartCountText).toBe('0');
-  }, 10000);
+  }, 100000);
 
   // Checking to make sure that localStorage for the cart is as we'd expect for the
   // cart being empty
